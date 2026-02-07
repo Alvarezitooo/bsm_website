@@ -8,8 +8,8 @@ import { siteInfo } from "@/data/siteInfo";
 const Hero = () => {
   return (
     <section className="relative bg-alt-bg overflow-hidden">
-      {/* Background Logo */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      {/* Background Logo (Desktop Only) */}
+      <div className="absolute inset-0 hidden sm:flex items-center justify-center">
         <Image
           src="/logo.svg"
           alt=""
@@ -24,21 +24,42 @@ const Hero = () => {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gray-900/30" />
 
-      <Container className="relative z-10 flex min-h-[80vh] items-center text-center sm:items-end sm:text-left">
-        <div className="py-24 sm:pb-32 sm:pt-0">
-          {/* Visually hidden H1 for SEO */}
-          <h1 className="sr-only">
+      <Container className="relative z-10 flex min-h-[70vh] sm:min-h-[80vh] items-center text-center sm:items-end sm:text-left">
+        <div className="w-full py-20 sm:pb-32 sm:pt-0">
+          
+          {/* Mobile-Only Identity */}
+          <div className="sm:hidden">
+            <Reveal>
+              <Image
+                src="/logo.svg"
+                alt="Logo Brasserie Saint Martin"
+                width={160}
+                height={57}
+                className="mx-auto h-16 w-auto"
+              />
+            </Reveal>
+            <Reveal delay={0.1}>
+              <h1 className="mt-6 font-serif text-4xl text-white">
+                Brasserie Saint Martin
+              </h1>
+            </Reveal>
+          </div>
+
+          {/* Desktop-Only SEO H1 */}
+          <h1 className="hidden sm:block sr-only">
             Brasserie Saint Martin
           </h1>
 
-          <Reveal>
-            <p className="max-w-xl text-lg md:text-xl text-white/90">
+          {/* Shared Tagline */}
+          <Reveal delay={0.2}>
+            <p className="mt-6 max-w-xl text-lg text-white/90 mx-auto sm:mx-0">
               Une expérience culinaire authentique à Hyères, quartier Saint Martin.
             </p>
           </Reveal>
 
-          <Reveal delay={0.1}>
-            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-start sm:justify-start">
+          {/* Shared Buttons */}
+          <Reveal delay={0.3}>
+            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-start">
               <Button href={siteInfo.reservationLink} target="_blank" rel="noopener noreferrer" size="lg">
                 Réserver une Table
               </Button>
