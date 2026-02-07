@@ -1,6 +1,5 @@
 import Hero from "@/components/sections/home/Hero";
 import InfoBar from "@/components/sections/home/InfoBar";
-import SignatureDishes from "@/components/sections/home/SignatureDishes";
 import Atmosphere from "@/components/sections/home/Atmosphere";
 import MenuPreview from "@/components/sections/home/MenuPreview";
 import Reviews from "@/components/sections/home/Reviews";
@@ -11,7 +10,6 @@ export default function HomePage() {
     <>
       <Hero />
       <InfoBar />
-      <SignatureDishes />
       <Atmosphere />
       <MenuPreview />
       <Reviews />

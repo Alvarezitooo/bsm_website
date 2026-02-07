@@ -70,7 +70,7 @@ const Header = () => {
             width={140}
             height={40}
             priority
-            className={`h-10 w-auto transition-colors ${isScrolled ? '' : 'invert'}`}
+            className={`h-10 w-auto transition-colors`}
           />
         </Link>
 

@@ -24,8 +24,8 @@ const Hero = () => {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gray-900/30" />
 
-      <Container className="relative z-10 flex min-h-[80vh] items-end text-left">
-        <div className="pb-24 sm:pb-32">
+      <Container className="relative z-10 flex min-h-[80vh] items-center text-center sm:items-end sm:text-left">
+        <div className="py-24 sm:pb-32 sm:pt-0">
           {/* Visually hidden H1 for SEO */}
           <h1 className="sr-only">
             Brasserie Saint Martin
@@ -38,7 +38,7 @@ const Hero = () => {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="mt-8 flex flex-col items-start justify-start gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-start sm:justify-start">
               <Button href={siteInfo.reservationLink} target="_blank" rel="noopener noreferrer" size="lg">
                 Réserver une Table
               </Button>
