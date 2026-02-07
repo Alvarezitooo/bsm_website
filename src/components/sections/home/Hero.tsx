@@ -24,7 +24,7 @@ const Hero = () => {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gray-900/30" />
 
-      <Container className="relative z-10 flex min-h-[80vh] items-end text-left">
+      <Container className="relative z-10 flex min-h-[80vh] items-center text-center sm:items-end sm:text-left">
         <div className="pb-24 sm:pb-32 w-full">
           
           <Reveal>
@@ -34,13 +34,13 @@ const Hero = () => {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <p className="mt-6 max-w-xl text-lg md:text-xl text-white/90">
+            <p className="mt-6 max-w-xl text-lg md:text-xl text-white/90 mx-auto sm:mx-0">
               Une expérience culinaire authentique à Hyères, quartier Saint Martin.
             </p>
           </Reveal>
 
           <Reveal delay={0.2}>
-            <div className="mt-8 flex flex-col items-start justify-start gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-start">
               <Button href={siteInfo.reservationLink} target="_blank" rel="noopener noreferrer" size="lg">
                 Réserver une Table
               </Button>
