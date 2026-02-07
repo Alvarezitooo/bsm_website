@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import Section from "@/components/ui/Section";
 import Container from "@/components/ui/Container";
 import ImageWrapper from "@/components/ImageWrapper";
 import Reveal from "@/components/animations/Reveal";
+import { motion } from "framer-motion";
 
 import { motion } from "framer-motion";
 
