@@ -67,10 +67,10 @@ const Header = () => {
           <Image
             src="/logo.svg"
             alt={siteInfo.name}
-            width={140}
-            height={40}
+            width={168}
+            height={48}
             priority
-            className={`h-10 w-auto transition-colors`}
+            className={`h-12 w-auto`}
           />
         </Link>
 
