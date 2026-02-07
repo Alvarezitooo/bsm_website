@@ -114,16 +114,40 @@ const Header = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <nav className="flex flex-col items-center justify-center h-full space-y-8">
+            <motion.nav 
+              className="flex flex-col items-center justify-center h-full space-y-8"
+              variants={{
+                visible: { transition: { staggerChildren: 0.07, delayChildren: 0.2 } },
+                hidden: { transition: { staggerChildren: 0.05, staggerDirection: -1 } },
+              }}
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+            >
               {navLinks.map((link) => (
-                <Link key={link.name} href={link.href} className="text-2xl font-medium text-text hover:text-brand-gold transition-colors" onClick={() => setIsMenuOpen(false)}>
-                  {link.name}
-                </Link>
+                <motion.li 
+                  key={link.name}
+                  variants={{
+                    hidden: { y: 20, opacity: 0 },
+                    visible: { y: 0, opacity: 1 },
+                  }}
+                >
+                  <Link href={link.href} className="text-2xl font-medium text-text hover:text-brand-gold transition-colors" onClick={() => setIsMenuOpen(false)}>
+                    {link.name}
+                  </Link>
+                </motion.li>
               ))}
-              <Button href={siteInfo.reservationLink} target="_blank" rel="noopener noreferrer" size="lg" className="mt-8">
-                Réserver une table
-              </Button>
-            </nav>
+              <motion.li
+                variants={{
+                  hidden: { y: 20, opacity: 0 },
+                  visible: { y: 0, opacity: 1 },
+                }}
+              >
+                <Button href={siteInfo.reservationLink} target="_blank" rel="noopener noreferrer" size="lg" className="mt-8">
+                  Réserver une table
+                </Button>
+              </motion.li>
+            </motion.nav>
           </motion.div>
         )}
       </AnimatePresence>
