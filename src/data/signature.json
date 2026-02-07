@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Poulpe de Méditerranée",
+    "description": "Grillé à la plancha, purée de patate douce, sauce vierge.",
+    "price": "26€",
+    "image": "/images/signature/poulpe.jpg"
+  },
+  {
+    "name": "Loup de Mer en Croûte de Sel",
+    "description": "Pour deux personnes, levé en salle, légumes de saison.",
+    "price": "68€",
+    "image": "/images/signature/loup-de-mer.jpg"
+  },
+  {
+    "name": "Tartare de Bœuf Charolais",
+    "description": "Coupé au couteau, préparé à votre goût, frites maison.",
+    "price": "21€",
+    "image": "/images/signature/tartare.jpg"
+  },
+  {
+    "name": "Risotto aux Gambas",
+    "description": "Riz Arborio crémeux, gambas flambées au pastis, bisque de crustacés.",
+    "price": "24€",
+    "image": "/images/signature/risotto.jpg"
+  },
+  {
+    "name": "Filet de Bœuf Rossini",
+    "description": "Tournedos de filet, escalope de foie gras poêlée, sauce Périgueux.",
+    "price": "32€",
+    "image": "/images/signature/rossini.jpg"
+  },
+  {
+    "name": "Pavlova aux Fruits Exotiques",
+    "description": "Meringue croquante, crème légère à la vanille, fruits frais.",
+    "price": "12€",
+    "image": "/images/signature/pavlova.jpg"
+  }
+]

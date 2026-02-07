@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "name": "Entrées",
+      "items": [
+        { "name": "Velouté de saison", "description": "Selon l'inspiration du marché.", "price": "11€" },
+        { "name": "Ceviche de Daurade Royale", "description": "Leche de tigre, patate douce, maïs cancha.", "price": "16€" },
+        { "name": "Œuf parfait bio", "description": "Crème de champignons, mouillettes aux truffes.", "price": "14€" },
+        { "name": "Terrine de foie gras de canard", "description": "Chutney de figues, pain d'épices toasté.", "price": "19€" }
+      ]
+    },
+    {
+      "name": "Plats",
+      "items": [
+        { "name": "Poulpe de Méditerranée", "description": "Grillé à la plancha, purée de patate douce, sauce vierge.", "price": "26€" },
+        { "name": "Loup de Mer en Croûte de Sel", "description": "Pour deux personnes, levé en salle, légumes de saison.", "price": "68€" },
+        { "name": "Tartare de Bœuf Charolais", "description": "Coupé au couteau, préparé à votre goût, frites maison.", "price": "21€" },
+        { "name": "Risotto aux Gambas", "description": "Riz Arborio crémeux, gambas flambées au pastis, bisque de crustacés.", "price": "24€" },
+        { "name": "Filet de Bœuf Rossini", "description": "Tournedos de filet, escalope de foie gras poêlée, sauce Périgueux.", "price": "32€" },
+        { "name": "Suprême de volaille fermière", "description": "Cuit à basse température, jus corsé, gratin dauphinois.", "price": "23€" }
+      ]
+    },
+    {
+      "name": "Desserts",
+      "items": [
+        { "name": "Pavlova aux Fruits Exotiques", "description": "Meringue croquante, crème légère à la vanille, fruits frais.", "price": "12€" },
+        { "name": "Mi-cuit au chocolat Guanaja", "description": "Cœur coulant, glace vanille de Madagascar.", "price": "11€" },
+        { "name": "Tarte au citron de Menton meringuée", "description": "Structure déstructurée, sablé breton.", "price": "11€" },
+        { "name": "Café gourmand", "description": "Assortiment de nos meilleures mignardises.", "price": "12€" }
+      ]
+    },
+    {
+      "name": "Boissons",
+      "items": [
+        { "name": "Eau plate / gazeuse (75cl)", "description": "", "price": "5€" },
+        { "name": "Coca-Cola / Zéro (33cl)", "description": "", "price": "4€" },
+        { "name": "Verre de vin (blanc, rosé, rouge)", "description": "Sélection du sommelier.", "price": "à partir de 6€" },
+        { "name": "Bière pression (25cl)", "description": "Blonde locale.", "price": "4€" },
+        { "name": "Expresso / Décaféiné", "description": "", "price": "2.5€" }
+      ]
+    }
+  ]
+}

@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Brasserie Saint Martin - Site Web
 
-## Getting Started
+Ce projet est un site web moderne et premium pour la "Brasserie Saint Martin", développé avec Next.js, TypeScript, et Tailwind CSS.
 
-First, run the development server:
+## 🚀 Démarrage Rapide
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Pour lancer le projet en mode développement local.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1.  **Installer les dépendances :**
+    ```bash
+    npm install
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2.  **Lancer le serveur de développement :**
+    ```bash
+    npm run dev
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
 
-## Learn More
+## ✏️ Comment Personnaliser le Contenu
 
-To learn more about Next.js, take a look at the following resources:
+La majorité du contenu du site est gérée depuis le dossier `/data`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Informations Générales
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Modifiez le fichier `/data/siteInfo.ts` pour changer :
+- Le nom du restaurant
+- L'adresse, le téléphone, l'email
+- Les liens de réservation et de carte (Google Maps)
+- Les liens des réseaux sociaux
+- Les horaires d'ouverture (utilisés pour le badge "Ouvert/Fermé")
+- Les informations légales du pied de page
 
-## Deploy on Vercel
+### 2. Menus
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Plats Signature (Page d'accueil) :** Modifiez `/data/signature.json`.
+- **Carte Complète :** Modifiez `/data/menu.json` pour changer les catégories et les plats de la page `/menu`.
+- **Menu PDF :** Remplacez le fichier `/public/menu.pdf` par votre propre version.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Images
+
+Toutes les images sont dans le dossier `/public/images`. Pour les remplacer, gardez les mêmes noms de fichiers ou mettez à jour les chemins dans les composants correspondants.
+
+- **Logo :** `/public/logo.png`
+- **Plats Signature :** `/public/images/signature/`
+- **Ambiance & Hero :** `/public/images/atmosphere/`
+
+Il est recommandé d'utiliser des images optimisées pour le web (par exemple, via un service comme TinyPNG) avant de les ajouter au projet.
+
+## 🌐 Déploiement sur Vercel
+
+Ce projet est configuré pour un déploiement "zéro-config" sur Vercel.
+
+1.  **Poussez votre code sur un dépôt Git (GitHub, GitLab, etc.).**
+
+2.  **Importez votre projet sur Vercel.**
+    - Connectez-vous à votre compte Vercel.
+    - Cliquez sur "Add New... -> Project".
+    - Sélectionnez votre dépôt Git.
+
+3.  **Configurez le projet (Vercel détecte normalement tout automatiquement).**
+    - **Framework Preset:** `Next.js`
+    - **Root Directory:** `bsm-website` (si vous avez gardé cette structure) ou `.` si le projet est à la racine de votre dépôt.
+    - Laissez les autres paramètres par défaut.
+
+4.  **Ajoutez les variables d'environnement (si nécessaire).**
+    - Ce projet n'en nécessite pas par défaut, mais si vous ajoutez des services externes (ex: une clé API pour un CMS), vous pouvez les ajouter dans `Settings -> Environment Variables`.
+
+5.  **Cliquez sur "Deploy".**
+
+Vercel construira et déploiera automatiquement votre site. Chaque `git push` sur la branche principale déclenchera un nouveau déploiement.
