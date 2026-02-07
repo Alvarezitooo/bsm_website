@@ -4,6 +4,8 @@ import Container from "@/components/ui/Container";
 import ImageWrapper from "@/components/ImageWrapper";
 import Reveal from "@/components/animations/Reveal";
 
+import { motion } from "framer-motion";
+
 const Atmosphere = () => {
   return (
     <Section id="ambiance">
@@ -15,7 +17,14 @@ const Atmosphere = () => {
               <h2 className="font-serif text-4xl md:text-5xl text-brand-gold">
                 Une Ambiance Unique
               </h2>
-              <div className="w-24 h-1 bg-accent-teal-soft my-6" />
+              <motion.div 
+                className="w-24 h-1 bg-accent-teal-soft my-6"
+                style={{ originX: 0 }}
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              />
               <div className="prose prose-lg text-muted-text max-w-none">
                 <p>
                   Plongez dans une atmosphère où l'élégance de la Riviera rencontre la convivialité d'une brasserie authentique. Notre salle lumineuse et notre terrasse ensoleillée sont une invitation à la détente.

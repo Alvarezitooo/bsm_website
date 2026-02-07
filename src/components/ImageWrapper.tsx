@@ -1,4 +1,7 @@
+"use client";
+
 import Image, { ImageProps } from "next/image";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 // Simple grey SVG placeholder
@@ -35,9 +38,11 @@ const ImageWrapper = ({
   ...props
 }: ImageWrapperProps) => {
   return (
-    <div
+    <motion.div
       className={cn("relative overflow-hidden", containerClassName)}
       style={{ width, height }}
+      whileHover={{ scale: 1.03 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
     >
       <Image
         src={src}
@@ -49,7 +54,7 @@ const ImageWrapper = ({
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         {...props}
       />
-    </div>
+    </motion.div>
   );
 };
 

@@ -39,7 +39,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
 
     const classes = cn(
-      "inline-flex items-center justify-center rounded-md font-semibold tracking-wide transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+      "inline-flex items-center justify-center rounded-md font-semibold tracking-wide transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+      "hover:scale-105 hover:shadow-md active:scale-100",
       buttonVariants.variant[variant],
       buttonVariants.size[size],
       className
