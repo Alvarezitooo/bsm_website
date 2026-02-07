@@ -56,7 +56,7 @@ const Header = () => {
 
   return (
     <motion.header
-      className="absolute top-0 left-0 right-0 z-50 w-full h-20 flex items-center md:fixed"
+      className="fixed top-0 left-0 right-0 z-50 w-full h-20 flex items-center"
       variants={headerVariants}
       animate={isScrolled ? "scrolled" : "top"}
       transition={{ duration: 0.3, ease: "easeInOut" }}
